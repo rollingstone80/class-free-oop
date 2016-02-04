@@ -12,24 +12,24 @@ function movie(spec) {
 	
 	// Define public object properties (if not present on the spec object, will default to undefined)
 	var name = spec.name,
-		  director = spec.director,
-		  cast = spec.cast;
+	    director = spec.director,
+	    cast = spec.cast;
 	
 	// Define methods with privileged access to private properties, for example:
 	var displayStatus = function() {
-		return status;
+	    return status;
 	}
 	var changeStatus = function() {
-		return status = 'finished downloading';
+	    return status = 'finished downloading';
 	}
 	
 	// Return object
 	return {
-		name: name,
-		director: director,
-		cast: cast,
-		displayStatus: displayStatus,
-		changeStatus: changeStatus
+	    name: name,
+	    director: director,
+	    cast: cast,
+	    displayStatus: displayStatus,
+	    changeStatus: changeStatus
 	};
 	
 }
