@@ -10,6 +10,10 @@ I sacrifice encapsulation, but I achieve:
 - no use of prototypal inheritance, convoluted when we want our object to inherit methods from multiple objects
 - no pollution of global scope 
 
+In the second example "movie-object-v2.html", I actually copy the methods from the parent to the child object (this could be repeated with multiple parent objects). Encapsulation is preserved, but at a significant performance cost: initializing 1 million objects in the second example takes on average 4x the time it takes in the first example (~800ms compared to ~200ms).
+
+Bottom line... there is no such thing as a free dinner. If you have to deal with a huge number of objects, keep them lean! Or go prototypal.
+
 Tested in Chrome v48.
 
 
