@@ -15,8 +15,6 @@ If multiple inheritance is not needed, just go prototypal.
 
 The last example "oloo pattern.js" is a super easy OLOO pattern which doesn't even use constructor functions. Objects are directly created by other objects and linked together via the prototype.
 
-Tested in Chrome v48.
-
 ## Credits
 
 Inspired by the absolute genius that is Douglas Crockford
