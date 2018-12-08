@@ -13,6 +13,8 @@ In the second example "movie-object-v2.js", I actually copy the methods from the
 
 If multiple inheritance is not needed, just go prototypal.
 
+The last example "oloo pattern.js" is a super easy OLOO pattern which doesn't even use constructor functions. Objects are directly created by other objects and linked together via the prototype.
+
 Tested in Chrome v48.
 
 ## Credits
